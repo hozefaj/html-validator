@@ -1,7 +1,8 @@
 {
     "manifest_version": 2,
     "name": "HTML Validator",
-    "version": "0.1.1",
+    "short_name" : "HTMLValidator",
+    "version": "0.2.0",
     "description": "Validating web page",
     "icons": {
         "16": "icon16.png",
@@ -11,10 +12,6 @@
     "browser_action": {
         "default_icon": "icon48.png"
     },
-    "content_scripts": [{
-        "js": [ "inspector.js"],
-        "matches": ["https://*.paypal.com/*"]
-    }],
     "background": {
         "scripts": ["event.js"],
         "persistent": false
